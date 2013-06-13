@@ -1,12 +1,14 @@
 <h1>redisdoc = Redis documentation console</h1>
 
-Why this project exists? Because there is currently no such tool and I wanted to document my Redis database.
-So I created a console that mimics Redis console.
+Why this project exists? Because there is currently no such tool and I needed to document my Redis database.
+So I created a console that mimics Redis console in it's functionality, but contains specific commands to document redis database.
 
 <h2>How to download:</h2> 
-See bin directory, which contains:
-	- redisdoc.jar: Java executable file
-	- redisdoc.properties: configuration
+See <code>bin</code> directory, which contains:
+<ul>
+	<li><code>redisdoc.jar</code>: Java executable file</li>
+	<li><code>redisdoc.properties</code>: configuration</li>
+</ul>
 
 <h2>How to run:</h2>
 <code>java -jar redisdoc.jar</code>
@@ -14,51 +16,41 @@ See bin directory, which contains:
 <h2>Functionality:</h2>
 
 <h3>Available commands:</h3>
-<code>help</code>
-show help for all commands
+<code>help</code> show help for all commands
 
-<code>help &lt;command&gt;</code>
-show help for specific command
+<code>help &lt;command&gt;</code> show help for specific command
 
+<code>quit OR exit</code> quit application
 
-quit OR exit
-quit application
+<code>select &lt;number&gt;</code> select redis database with your keys
 
-select <number>
-select redis database with your keys
+<code>dselect &lt;number&gt;</code> select redis database for documentation
 
-dselect <number>
-select redis database for documentation
+<code>keys &lt;pattern&gt;</code> select keys using pattern
 
-keys <pattern>
-select keys using pattern
+<code>dset &lt;doc-name (pattern)&gt; &lt;description&gt;</code> set documentation key (pattern) with description
 
-dset <doc-name (pattern)> <description>
-set documentation key (pattern) with description
+<code>ddel &lt;doc-name&gt;</code> deletes documentation key
 
-ddel <doc-name>
-deletes documentation key
-
-dget <doc-name>
+<code>dget &lt;doc-name&gt;</code>
 documentation key detail
 contains several optional parameters, that can be combined
-dget --type <doc-name>
+<code>dget --type &lt;doc-name&gt;</code>
 show keys with their types
-dget --detail <doc-name>
+<code>dget --detail &lt;doc-name&gt;</code>
 show keys with their values or length
-dget --ttl <doc-name>
+<code>dget --ttl &lt;doc-name&gt;</code>
 show keys with ttl
 
-dkeys <pattern>
-list documentation keys using pattern
+<code>dkeys &lt;pattern&gt;</code> list documentation keys using pattern
 
-dundkeys
+<code>dundkeys</code>
 retrieves undocumented keys from your database
 contains several optional parameters, that can be combined
-dundkeys --type
+<code>dundkeys --type</code>
 show undocumented keys with their types
-dundkeys --detail
+<code>dundkeys --detail</code>
 show undocumented keys with their values or length
-dundkeys --ttl
+<code>dundkeys --ttl</code>
 show undocumented keys with ttl
 
