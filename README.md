@@ -8,15 +8,15 @@ How to download: See bin directory, which contains:
 	- redisdoc.properties: configuration
 
 How to run:
-	java -jar redisdoc.jar
+<code>java -jar redisdoc.jar</code>
 
 Functionality:
 
 Available commands:
-	help
-	show help for all commands
-	help <command>
-	show help for specific command
+help
+show help for all commands
+help <command>
+show help for specific command
 
 quit OR exit
 quit application
