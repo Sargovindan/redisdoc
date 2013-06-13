@@ -1,10 +1,11 @@
 <h1>redisdoc = Redis documentation console</h1>
 
 Why this project exists? Because there is currently no such tool and I needed to document my Redis database.
-So I created a console that mimics Redis console in it's functionality, but contains specific commands to document redis database.
+So I created a console that mimics Redis console in it's functionality, but contains commands specific for documenting redis database.
 
 <h2>How to download:</h2> 
-See <code>bin</code> directory, which contains:
+Download contents of <code>bin</code> directory:
+
 <ul>
 	<li><code>redisdoc.jar</code>: Java executable file</li>
 	<li><code>redisdoc.properties</code>: configuration</li>
@@ -20,7 +21,7 @@ See <code>bin</code> directory, which contains:
 
 <code>help &lt;command&gt;</code> show help for specific command
 
-<code>quit OR exit</code> quit application
+<code>quit</code> OR <code>exit</code> quit application
 
 <code>select &lt;number&gt;</code> select redis database with your keys
 
