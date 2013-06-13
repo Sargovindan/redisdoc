@@ -14,7 +14,7 @@ public class CommandDget extends AbstractCommand {
 	}
 
 	public String[] getUsage() {
-		return new String[] { "dget <doc-name>", "documentation key detail", "contains several optional parameters, that can be combined",
+		return new String[] { "dget <doc-name>", "documentation key detail", "contains several optional parameters, which can be combined",
 				"dget --type <doc-name>", "show keys with their types", "dget --detail <doc-name>", "show keys with their values or length",
 				"dget --ttl <doc-name>", "show keys with ttl" };
 	}

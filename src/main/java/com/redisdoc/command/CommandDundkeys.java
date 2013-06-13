@@ -19,7 +19,7 @@ public class CommandDundkeys extends AbstractCommand {
 
 	public String[] getUsage() {
 		return new String[] { "dundkeys", "retrieves undocumented keys from your database",
-				"contains several optional parameters, that can be combined", "dundkeys --type", "show undocumented keys with their types",
+				"contains several optional parameters, which can be combined", "dundkeys --type", "show undocumented keys with their types",
 				"dundkeys --detail", "show undocumented keys with their values or length", "dundkeys --ttl", "show undocumented keys with ttl" };
 	}
 

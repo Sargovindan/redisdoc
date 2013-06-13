@@ -36,7 +36,7 @@ Download contents of <code>bin</code> directory:
 
 
 <code>dget &lt;doc-name&gt;</code>
-documentation key detail. Contains several optional parameters, that can be combined
+documentation key detail. Contains several optional parameters, which can be combined
 
 <code>dget --type &lt;doc-name&gt;</code>
 show keys with their types
@@ -52,7 +52,7 @@ show keys with ttl
 
 
 <code>dundkeys</code>
-retrieves undocumented keys from your database. Contains several optional parameters, that can be combined
+retrieves undocumented keys from your database. Contains several optional parameters, which can be combined
 
 <code>dundkeys --type</code>
 show undocumented keys with their types
