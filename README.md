@@ -32,6 +32,8 @@ See <code>bin</code> directory, which contains:
 
 <code>ddel &lt;doc-name&gt;</code> deletes documentation key
 
+
+
 <code>dget &lt;doc-name&gt;</code>
 documentation key detail. Contains several optional parameters, that can be combined
 
@@ -45,6 +47,8 @@ show keys with their values or length
 show keys with ttl
 
 <code>dkeys &lt;pattern&gt;</code> list documentation keys using pattern
+
+
 
 <code>dundkeys</code>
 retrieves undocumented keys from your database. Contains several optional parameters, that can be combined
