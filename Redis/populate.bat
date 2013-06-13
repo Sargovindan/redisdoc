@@ -1,1 +1,0 @@
-redis-cli < populate.txt
