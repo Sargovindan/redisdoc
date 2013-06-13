@@ -33,24 +33,28 @@ See <code>bin</code> directory, which contains:
 <code>ddel &lt;doc-name&gt;</code> deletes documentation key
 
 <code>dget &lt;doc-name&gt;</code>
-documentation key detail
-contains several optional parameters, that can be combined
+documentation key detail. Contains several optional parameters, that can be combined
+
 <code>dget --type &lt;doc-name&gt;</code>
 show keys with their types
+
 <code>dget --detail &lt;doc-name&gt;</code>
 show keys with their values or length
+
 <code>dget --ttl &lt;doc-name&gt;</code>
 show keys with ttl
 
 <code>dkeys &lt;pattern&gt;</code> list documentation keys using pattern
 
 <code>dundkeys</code>
-retrieves undocumented keys from your database
-contains several optional parameters, that can be combined
+retrieves undocumented keys from your database. Contains several optional parameters, that can be combined
+
 <code>dundkeys --type</code>
 show undocumented keys with their types
+
 <code>dundkeys --detail</code>
 show undocumented keys with their values or length
+
 <code>dundkeys --ttl</code>
 show undocumented keys with ttl
 
