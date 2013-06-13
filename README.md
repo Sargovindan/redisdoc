@@ -1,7 +1,7 @@
 <h1>redisdoc = Redis documentation console</h1>
 
 Why this project exists? Because there is currently no such tool and I needed to document my Redis database.
-So I created a console that mimics Redis console in it's functionality, but contains commands specific for documenting redis database.
+So I created a console that mimics Redis console functionality, but contains commands specific for documenting redis database.
 
 <h2>How to download:</h2> 
 Download contents of <code>bin</code> directory:
@@ -21,7 +21,7 @@ Download contents of <code>bin</code> directory:
 
 <code>help &lt;command&gt;</code> show help for specific command
 
-<code>quit</code> OR <code>exit</code> quit application
+<code>quit</code> or <code>exit</code> quit application
 
 <code>select &lt;number&gt;</code> select redis database with your keys
 
