@@ -1,22 +1,25 @@
-redisdoc = Redis documentation console
+<h1>redisdoc = Redis documentation console</h1>
 
 Why this project exists? Because there is currently no such tool and I wanted to document my Redis database.
 So I created a console that mimics Redis console.
 
-How to download: See bin directory, which contains:
+<h2>How to download:</h2> 
+See bin directory, which contains:
 	- redisdoc.jar: Java executable file
 	- redisdoc.properties: configuration
 
-How to run:
+<h2>How to run:</h2>
 <code>java -jar redisdoc.jar</code>
 
-Functionality:
+<h2>Functionality:</h2>
 
-Available commands:
-help
+<h3>Available commands:</h3>
+<code>help</code>
 show help for all commands
-help <command>
+
+<code>help &lt;command&gt;</code>
 show help for specific command
+
 
 quit OR exit
 quit application
