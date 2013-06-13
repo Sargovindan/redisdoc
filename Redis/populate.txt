@@ -1,0 +1,10 @@
+set a1:b1 value
+set a1:b2 value
+set a2:b1 value
+set a2:b2 value
+hmset hash:tags tag:java Java tag:spring Spring tag:redis redis
+lpush mylist a
+lpush mylist b
+lpush mylist c
+sadd myset a b c
+zadd mysortedset 1 a 2 b 3 c
