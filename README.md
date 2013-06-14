@@ -14,7 +14,7 @@ Download contents of <code>bin</code> directory:
 </ul>
 
 <h2>How to run:</h2>
-<code>java -jar redisdoc.jar</code>
+In terminal / cmd: <code>java -jar redisdoc.jar</code>
 
 <h2>Why Java application?</h2>
 Because I'm a Java programmer :) And also because I use several different 
@@ -38,7 +38,7 @@ operating systems and this application must run on all of them.
 <code>dset &lt;doc-name (pattern)&gt; &lt;description&gt;</code> set documentation key (pattern) with description
 
 <code>ddel &lt;doc-name&gt;</code> deletes documentation key
-<br>
+<br><br>
 
 
 <code>dget &lt;doc-name&gt;</code>
@@ -54,7 +54,7 @@ show keys with their values or length
 show keys with ttl
 
 <code>dkeys &lt;pattern&gt;</code> list documentation keys using pattern
-<br>
+<br><br>
 
 
 <code>dundkeys</code>
@@ -72,8 +72,8 @@ show undocumented keys with ttl
 
 <h2>My other projects:</h2>
 <ul>
-	<li><a href="http://www.javavids.com" target="_blank" title="Java video tutorials">Java video tutorials</a></li>
-	<li><a href="http://sitemonitoring.sourceforge.net/" target="_blank" title="Website monitoring software">Website monitoring software</a></li>
+	<li><a href="http://www.javavids.com" target="_blank" title="Java video tutorials">Java video tutorials</a> (free online tutorials)</li>
+	<li><a href="http://sitemonitoring.sourceforge.net/" target="_blank" title="Website monitoring software">Website monitoring software</a> (free OSS software)</li>
 	<li><a href="http://www.java-skoleni.cz" target="_blank" title="Java školení">Java školení</a> (in Czech)</li>
 	<li><a href="http://www.sql-skoleni.cz" target="_blank" title="Java školení">SQL školení</a> (in Czech)</li>
 </ul>
