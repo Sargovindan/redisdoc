@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>redisdoc</groupId>
 	<artifactId>redisdoc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,25 +27,9 @@
 		<finalName>redisdoc</finalName>
 		<plugins>
 
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>2.5.2</version>
-			</plugin>
-
-			<!-- call: exec:java -->
-			<!-- starts Java application -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
-				<configuration>
-					<mainClass>com.redisdoc.Main</mainClass>
-				</configuration>
-			</plugin>
-
 			<!-- call: mvn antrun:run -->
-			<!-- starts Redis server -->
+			<!-- During development it can be useful to start a redis server with 
+				some test data. This is my configuration. -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
@@ -76,6 +60,8 @@
 				</executions>
 			</plugin>
 
+			<!-- call: mvn compile assembly:single -->
+			<!-- This is how to create a JAR file -->
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
@@ -90,6 +76,8 @@
 				</configuration>
 			</plugin>
 
+			<!-- Compiled using Java 5, because there are still some folks using this 
+				old version -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
