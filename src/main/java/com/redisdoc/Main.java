@@ -13,6 +13,7 @@ import jline.console.completer.Completer;
 import jline.console.completer.NullCompleter;
 import jline.console.completer.StringsCompleter;
 
+import com.redisdoc.command.CommandClear;
 import com.redisdoc.command.CommandDdel;
 import com.redisdoc.command.CommandDget;
 import com.redisdoc.command.CommandDkeys;
@@ -51,8 +52,9 @@ public class Main {
 			// methods and register your command here.
 			CommandHandler handler = new CommandHandler();
 			handler.register(new CommandHelp(handler));
-			CommandQuit commandExit = new CommandQuit();
-			handler.register(commandExit);
+			handler.register(new CommandClear(console));
+			CommandQuit commandQuit = new CommandQuit();
+			handler.register(commandQuit);
 			handler.register(new CommandSelect(console));
 			handler.register(new CommandDselect());
 			handler.register(new CommandKeys());
@@ -62,7 +64,7 @@ public class Main {
 			handler.register(new CommandDkeys());
 			handler.register(new CommandDundkeys());
 
-			// auto complete feature in shell
+			// auto complete feature in console
 			AggregateCompleter aggregateCompleter = new AggregateCompleter();
 			Iterator<CommandListener> iterator = handler.iterator();
 			while (iterator.hasNext()) {
@@ -81,7 +83,7 @@ public class Main {
 			console.addCompleter(aggregateCompleter);
 
 			while ((line = console.readLine()) != null) {
-				if (commandExit.isCalled(line)) {
+				if (commandQuit.isCalled(line)) {
 					break;
 				}
 				try {
