@@ -5,7 +5,7 @@ So I created a console that mimics Redis console functionality (because I suppos
 Redis database, you already use Redis and you shouldn't be forced to learn something radically new), but 
 redisdoc contains commands specific for documenting your Redis database.
 
-<h2>How to download:</h2> 
+<h2>How to download & run:</h2> 
 Download contents of <code>bin</code> directory:
 
 <ul>
@@ -13,10 +13,9 @@ Download contents of <code>bin</code> directory:
 	<li><code>redisdoc.properties</code>: configuration</li>
 </ul>
 
-<h2>How to run:</h2>
-In terminal / cmd: <code>java -jar redisdoc.jar</code>
+Run this application in terminal / cmd: <code>java -jar redisdoc.jar</code>
 
-<h2>Why Java application?</h2>
+<h3>Why Java application?</h3>
 Because I'm a Java programmer :) And also because I use several different 
 operating systems and this application must run on all of them.
 
@@ -38,6 +37,8 @@ operating systems and this application must run on all of them.
 <code>dset &lt;doc-name (pattern)&gt; &lt;description&gt;</code> set documentation key (pattern) with description
 
 <code>ddel &lt;doc-name&gt;</code> deletes documentation key
+
+<code>dkeys &lt;pattern&gt;</code> list documentation keys using pattern
 <br><br>
 
 
@@ -52,8 +53,6 @@ show keys with their values or length
 
 <code>dget --ttl &lt;doc-name&gt;</code>
 show keys with ttl
-
-<code>dkeys &lt;pattern&gt;</code> list documentation keys using pattern
 <br><br>
 
 
