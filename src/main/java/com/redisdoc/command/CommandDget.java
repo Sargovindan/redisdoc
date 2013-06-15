@@ -76,7 +76,7 @@ public class CommandDget extends AbstractCommand {
 			}
 		}
 		if (outputSet.cropped) {
-			System.out.println("Too many keys. Showing first " + RedisdocProperties.getProperty(RedisdocProperties.REDISDOC_PREFIX) + " keys.");
+			System.out.println("Too many keys. Showing first " + RedisdocProperties.getProperty(RedisdocProperties.MAX_KEYS_OUTPUT) + " keys.");
 		}
 
 	}
