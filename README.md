@@ -15,6 +15,8 @@ Download contents of <code>bin</code> directory:
 
 Run this application in terminal / cmd: <code>java -jar redisdoc.jar</code>
 
+<img src='redisdoc.jpg' />
+
 <h3>Why Java application?</h3>
 Because I'm a Java programmer :) And also because I use several different 
 operating systems and this application must run on all of them.
@@ -76,3 +78,13 @@ show undocumented keys with ttl
 	<li><a href="http://www.java-skoleni.cz" target="_blank" title="Java školení">Java školení</a> (in Czech)</li>
 	<li><a href="http://www.sql-skoleni.cz" target="_blank" title="Java školení">SQL školení</a> (in Czech)</li>
 </ul>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4384433-13', 'github.com');
+  ga('send', 'pageview');
+</script>
