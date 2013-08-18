@@ -78,15 +78,17 @@ show undocumented keys with ttl
 
 <p>I have following Redis database, where are Java news stories. Each news story has some tags (for example news story "Java 8" has tags java, breaking news, java 8):</p>
 
+<pre>
 <code>
-news:hello-world-java<br>
-news:java-8<br>
-news:java-summer-fun<br>
-tag:java<br>
-tag:java-8<br>
-tag:breaking-news<br>
-news-tags:java-8<br>
+news:hello-world-java
+news:java-8
+news:java-summer-fun
+tag:java
+tag:java-8
+tag:breaking-news
+news-tags:java-8
 </code>
+</pre>
 
 <h3>Description</h3>
 
@@ -98,24 +100,25 @@ news-tags:java-8<br>
 
 <h3>Documenting database</h3>
 
+<pre>
 <code>
-// list all commands<br>
-press &lt;TAB&gt;, for detailed information run command "help"<br>
-// set info about database<br>
-dinfoset tags "Jiri Pinkas" "news tags database"<br>
-// see info about database<br>
-dinfoget<br>
-// show all undocumented keys<br>
-dundkeys<br>
-// document keys<br>
-dset news:* "news story detail"<br>
-dset tag:* "tag detail (full name)"<br>
-dset news-tags:* "tags set for particular news story"<br>
-// see current documentation detail<br>
-dkeys *<br>
-// DONE! EASY, RIGHT?<br>
+// list all commands
+press &lt;TAB&gt;, for detailed information run command "help"
+// set info about database
+dinfoset tags "Jiri Pinkas" "news tags database"
+// see info about database
+dinfoget
+// show all undocumented keys
+dundkeys
+// document keys
+dset news:* "news story detail"
+dset tag:* "tag detail (full name)"
+dset news-tags:* "tags set for particular news story"
+// see current documentation detail
+dkeys *
+// DONE! EASY, RIGHT?
 </code>
-
+</pre>
 
 <h2>My other projects:</h2>
 <ul>
