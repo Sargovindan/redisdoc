@@ -99,8 +99,8 @@ news-tags:java-8
 <h3>Documenting database</h3>
 
 <code>
-// list all commands
-press &lt;TAB&gt;, for detailed information run command "help"
+// list all commands<br>
+press &lt;TAB&gt;, for detailed information run command "help"<br>
 // set info about database
 dinfoset tags "Jiri Pinkas" "news tags database"
 // see info about database
