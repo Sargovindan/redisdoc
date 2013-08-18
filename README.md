@@ -30,6 +30,10 @@ operating systems and this application must run on all of them.
 
 <code>quit</code> or <code>exit</code> quit application
 
+<code>dinfoset</code> set database information - author, database name and description
+
+<code>dinfoget</code> get database information - author, database name and description
+
 <code>select &lt;number&gt;</code> select redis database with your keys
 
 <code>dselect &lt;number&gt;</code> select redis database for documentation
@@ -69,6 +73,48 @@ show undocumented keys with their values or length
 
 <code>dundkeys --ttl</code>
 show undocumented keys with ttl
+
+<h2>Usage</h2>
+
+<p>I have following Redis database, where are Java news stories. Each news story has some tags (for example news story "Java 8" has tags java, breaking news, java 8):</p>
+
+<code>
+news:hello-world-java
+news:java-8
+news:java-summer-fun
+tag:java
+tag:java-8
+tag:breaking-news
+news-tags:java-8
+</code>
+
+<h3>Description</h3>
+
+<ul>
+<li>Keys starting with "news" contain news story detail</li>
+<li>Keys starting with "tag" contain tag detail (full name)</li>
+<li>Keys starting with "news-tags" contain tags set for particular news story</li>
+</ul>
+
+<h3>Documenting database</h3>
+
+<code>
+// list all commands
+press &lt;TAB&gt;, for detailed information run command "help"
+// set info about database
+dinfoset tags "Jiri Pinkas" "news tags database"
+// see info about database
+dinfoget
+// show all undocumented keys
+dundkeys
+// document keys
+dset news:* "news story detail"
+dset tag:* "tag detail (full name)"
+dset news-tags:* "tags set for particular news story"
+// see current documentation detail
+dkeys *
+// DONE! EASY, RIGHT?
+</code>
 
 
 <h2>My other projects:</h2>

@@ -14,7 +14,14 @@ import com.redisdoc.exception.CommandParameterException;
  */
 public abstract class AbstractCommand implements CommandListener {
 
+	/**
+	 * access to real database
+	 */
 	protected static final RedisClient jedisDatabase;
+
+	/**
+	 * access to redisdoc database
+	 */
 	protected static final RedisClient jedisRedisdoc;
 
 	static {

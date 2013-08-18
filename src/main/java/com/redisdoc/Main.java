@@ -20,10 +20,12 @@ import com.redisdoc.command.CommandDkeys;
 import com.redisdoc.command.CommandDselect;
 import com.redisdoc.command.CommandDset;
 import com.redisdoc.command.CommandDundkeys;
+import com.redisdoc.command.CommandInfoget;
 import com.redisdoc.command.CommandHelp;
 import com.redisdoc.command.CommandKeys;
 import com.redisdoc.command.CommandQuit;
 import com.redisdoc.command.CommandSelect;
+import com.redisdoc.command.CommandInfoset;
 import com.redisdoc.command.util.AbstractCommand;
 import com.redisdoc.command.util.CommandHandler;
 import com.redisdoc.command.util.CommandListener;
@@ -58,9 +60,11 @@ public class Main {
 			handler.register(new CommandSelect(console));
 			handler.register(new CommandDselect());
 			handler.register(new CommandKeys());
+			handler.register(new CommandInfoset());
+			handler.register(new CommandInfoget());
 			handler.register(new CommandDset());
-			handler.register(new CommandDdel());
 			handler.register(new CommandDget());
+			handler.register(new CommandDdel());
 			handler.register(new CommandDkeys());
 			handler.register(new CommandDundkeys());
 
